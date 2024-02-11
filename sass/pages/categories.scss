@@ -379,6 +379,8 @@
 
 .footer {
   background-image: url("../../assets/images/home-img/bg-footer.png");
+  background-color: rgb(255, 249, 223);
+
   padding: 24px 0;
   .container {
     .footer-bottom {
@@ -481,3 +483,124 @@
   }
 }
 // footer section
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fcd5bacc;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  animation: modalScale 0.3s linear alternate;
+  z-index: 100;
+}
+.modal.open {
+  display: flex;
+}
+
+.modal-content {
+  #btn-close {
+    background-color: red;
+    position: relative;
+    top: -375px;
+    left: 290px;
+  }
+  padding: 72px 80px 40px 40px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  &__h {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #414141;
+    margin-bottom: 32px;
+  }
+  &__p {
+    //styleName: Desc/Text/M;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8f8f8f;
+  }
+  &__i {
+    border: 1px solid #70c05b;
+    border-radius: 10px;
+    padding: 16px 40px;
+    outline: none;
+    margin-bottom: 32px;
+  }
+  &__btn {
+    //styleName: Desc/Text/L;
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #fcd5ba;
+    border-radius: 5px;
+    padding: 16px 92px;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+  &__flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    &__a {
+      border: 1px solid #70c05b;
+
+      font-family: Rubik;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #70c05b;
+      padding: 4px 10px;
+      border-radius: 5px;
+    }
+    &__a2 {
+      //styleName: Desc/Text/XS;
+      font-family: Rubik;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #606060;
+      &:hover {
+        color: #70c05b;
+        padding: 4px 10px;
+        color: #70c05b;
+        border: 1px solid #70c05b;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@keyframes modalScale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#btn-open {
+  padding: 10px 18px;
+  border-radius: 5px;
+  background-color: rgb(193, 245, 141);
+}

@@ -130,3 +130,31 @@ function displayProducts(products) {
   cards.innerHTML = str;
 }
 displayProducts(products);
+
+// const loginForm = document.getElementById(`login-form`);
+// const toggleBtn = document.getElementById("toggle");
+
+// toggleForm.addEventListener(`click`, function (e) {
+//   loginForm.classList.toggle(`open`);
+// });
+const btnOpen = document.getElementById("btn-open");
+const btnClose = document.getElementById("btn-close");
+
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+
+btnOpen.addEventListener("click", function (e) {
+  modal.classList.add("open");
+});
+
+btnClose.addEventListener("click", function (e) {
+  modal.classList.remove("open");
+});
+
+modalContent.addEventListener("click", function (e) {
+  e.stopPropagation();
+});
+
+modal.addEventListener("click", function (e) {
+  modal.classList.remove("open");
+});

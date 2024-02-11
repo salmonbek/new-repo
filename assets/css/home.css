@@ -799,6 +799,7 @@ button {
 .footer {
   background-image: url("../../assets/images/home-img/bg-footer.png");
   padding: 24px 0;
+  background-color: rgb(255, 249, 223);
 }
 .footer .container .footer-bottom {
   display: -webkit-box;
@@ -1049,4 +1050,9 @@ button {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+#btn-open {
+  padding: 10px 18px;
+  border-radius: 5px;
+  background-color: rgb(193, 245, 141);
 }

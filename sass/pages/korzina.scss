@@ -3,49 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-#login-form.open {
-  display: flex;
-}
-
-.body {
-  .link-area {
-    display: flex;
-    margin-top: 77px;
-    position: fixed;
-    padding-right: 10px;
-    left: 50px;
-    right: 50px;
-    border-radius: 10px;
-    padding-top: 30px;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    display: none;
-    background-color: #fff;
-    z-index: 100;
-    &__items {
-      &__div {
-        margin-bottom: 24px;
-        &__links {
-          //styleName: Desc/Text-Bold/S;
-          font-family: Rubik;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 24px;
-          letter-spacing: 0em;
-          text-align: left;
-          color: #414141;
-          &:hover {
-            color: #ff6633;
-            transition: 0.3s;
-          }
-        }
-      }
-    }
-  }
-}
-
 // header
 .header {
   position: fixed;
@@ -479,6 +436,47 @@
   }
 }
 
+#login-form.open {
+  display: flex;
+}
+
+.link-area {
+  display: flex;
+  margin-top: 77px;
+  position: fixed;
+  padding-right: 10px;
+  left: 50px;
+  right: 50px;
+  border-radius: 10px;
+  padding-top: 30px;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: none;
+  background-color: #fff;
+  z-index: 100;
+  &__items {
+    &__div {
+      margin-bottom: 24px;
+      &__links {
+        //styleName: Desc/Text-Bold/S;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #414141;
+        &:hover {
+          color: #ff6633;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -598,4 +596,33 @@
   padding: 10px 18px;
   border-radius: 5px;
   background-color: rgb(193, 245, 141);
+}
+
+.main {
+  padding-top: 140px;
+  .links {
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      .a1 {
+        font-family: Rubik;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #414141;
+      }
+      .a2 {
+        font-family: Rubik;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #8f8f8f;
+      }
+    }
+  }
 }
