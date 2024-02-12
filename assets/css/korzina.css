@@ -665,6 +665,17 @@ button {
 .main {
   padding-top: 140px;
 }
+.main .korzina .container .korzina-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 28px;
+}
 .main .links .container {
   display: -webkit-box;
   display: -ms-flexbox;

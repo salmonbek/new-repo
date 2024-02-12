@@ -600,6 +600,16 @@
 
 .main {
   padding-top: 140px;
+  .korzina {
+    .container {
+      .korzina-card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 28px;
+      }
+    }
+  }
   .links {
     .container {
       display: flex;
