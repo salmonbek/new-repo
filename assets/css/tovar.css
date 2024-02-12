@@ -30,6 +30,24 @@ button {
   padding: 0 20px;
 }
 
+.sale-card__item__links {
+  border: 1px solid rgb(79, 241, 79);
+  padding: 2px 9px;
+  color: #414141;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-left: 130px;
+}
+.sale-card__item__links:hover {
+  border: none;
+  background-color: #70c05b;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 #login-form.open {
   display: -webkit-box;
   display: -ms-flexbox;
