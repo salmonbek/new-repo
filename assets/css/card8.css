@@ -30,56 +30,23 @@ button {
   padding: 0 20px;
 }
 
-.main {
-  text-align: center;
-  padding: 100px 100px;
+.container .cards {
+  background-color: rgb(244, 220, 220);
   margin-top: 100px;
-}
-.main img {
-  max-width: 100%;
-}
-.main .card-content {
-  padding: 100px 100px 100px;
+  padding: 50px 50px 50px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 200px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  border-radius: 10px;
-  background-color: aliceblue;
-  -webkit-box-shadow: 10px 10px 10px rgb(83, 21, 21);
-          box-shadow: 10px 10px 10px rgb(83, 21, 21);
+  -webkit-box-shadow: 0px 0px 10px 10px black;
+          box-shadow: 0px 0px 10px 10px black;
 }
-.main .card-content .card-cntent-left .card-content-left__a {
-  border: 2px solid greenyellow;
-  border-radius: 6px;
-  padding: 12px 24px;
-  color: #414141;
+.container .cards img {
+  margin-bottom: 10px;
 }
-.main .card-content .card-cntent-left .card-content-left__a:hover {
-  border: none;
-  color: #fff;
-  background-color: aquamarine;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.container .cards img {
+  width: 100%;
 }
-.main .card-content .card-cntent-left .card-cntent-left__p {
-  font-family: Rubik;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #414141;
-  margin-bottom: 65px;
-}
-.main .card-content .card-cntent-left .card-content-left-description .card-content-left-description1 {
+.container .cards p {
   font-family: Rubik;
   font-size: 18px;
   font-weight: 700;
@@ -87,14 +54,24 @@ button {
   letter-spacing: 0em;
   text-align: left;
   color: #414141;
-  margin-bottom: 13px;
 }
-
-@media (max-width: 600px) {
-  .main {
-    padding: 20px 20px;
-  }
-  .main .card-content {
-    padding: 30px 30px 30px 30px;
-  }
+.container .cards h3 {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 19px;
+}
+.container .cards button {
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: 2px solid rgb(22, 196, 45);
+  color: #414141;
+}
+.container .cards button:hover {
+  background-color: rgb(22, 196, 45);
+  color: #fff;
 }

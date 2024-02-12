@@ -3,68 +3,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-.main {
-  text-align: center;
-  padding: 100px 100px;
-  margin-top: 100px;
-  img {
-    max-width: 100%;
-  }
-  .card-content {
-    padding: 100px 100px 100px;
+.container {
+  .cards {
+    background-color: rgb(244, 220, 220);
+    margin-top: 100px;
+    padding: 50px 50px 50px 50px;
     display: flex;
-    gap: 200px;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-basis: 100%;
-    border-radius: 10px;
-    background-color: aliceblue;
-    box-shadow: 10px 10px 10px rgb(83, 21, 21);
-    .card-cntent-left {
-      .card-content-left__a {
-        border: 2px solid greenyellow;
-        border-radius: 6px;
-        padding: 12px 24px;
-        color: #414141;
-        &:hover {
-          border: none;
-          color: #fff;
-          background-color: aquamarine;
-          transition: 0.5s;
-        }
-      }
-      .card-cntent-left__p {
-        //styleName: Desc/Text/S;
-        font-family: Rubik;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #414141;
-        margin-bottom: 65px;
-      }
-      .card-content-left-description {
-        .card-content-left-description1 {
-          font-family: Rubik;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 27px;
-          letter-spacing: 0em;
-          text-align: left;
-          color: #414141;
-          margin-bottom: 13px;
-        }
-      }
+    img {
+      margin-bottom: 10px;
     }
-  }
-}
-
-@media (max-width: 600px) {
-  .main {
-    padding: 20px 20px;
-    .card-content {
-      padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 10px 10px black;
+    p {
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #414141;
+    }
+    h3 {
+      color: #414141;
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 19px;
+    }
+    button {
+      padding: 4px 12px;
+      border-radius: 5px;
+      border: 2px solid rgb(22, 196, 45);
+      color: #414141;
+      &:hover {
+        background-color: rgb(22, 196, 45);
+        color: #fff;
+      }
     }
   }
 }

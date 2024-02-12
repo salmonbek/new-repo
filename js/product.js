@@ -21,6 +21,58 @@ window.addEventListener("scroll", function () {
   toggleBacktop();
 });
 
+const cards = document.querySelector(`.cards`);
+
+function displayProducts(products) {
+  let str = ``;
+  products.forEach((product) => {
+    str += `
+        <div class ="card">
+        <img src=${product.images[0]} />
+       <div class="card-content">
+        <h3>${product.prise}</h3>
+        <p>${product.description}</p>
+        <div class=""star >
+        <img src=${product.images[1]} />
+        </div>
+        <button class="btn">${product.button}</button>
+       </div>
+        </div>
+
+    `;
+  });
+  cards.innerHTML = str;
+}
+displayProducts(products);
+
+// const loginForm = document.getElementById(`login-form`);
+// const toggleBtn = document.getElementById("toggle");
+
+// toggleForm.addEventListener(`click`, function (e) {
+//   loginForm.classList.toggle(`open`);
+// });
+const btnOpen = document.getElementById("btn-open");
+const btnClose = document.getElementById("btn-close");
+
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+
+btnOpen.addEventListener("click", function (e) {
+  modal.classList.add("open");
+});
+
+btnClose.addEventListener("click", function (e) {
+  modal.classList.remove("open");
+});
+
+modalContent.addEventListener("click", function (e) {
+  e.stopPropagation();
+});
+
+modal.addEventListener("click", function (e) {
+  modal.classList.remove("open");
+});
+
 const products = [
   {
     prise: "44.50$",
@@ -107,54 +159,20 @@ const products = [
     button: "В корзину",
   },
 ];
-const cards = document.querySelector(`.cards`);
 
+const productCards = document.querySelector(`.product-cards`);
 function displayProducts(products) {
   let str = ``;
   products.forEach((product) => {
     str += `
-        <div class ="card">
-        <img src=${product.images[0]} />
-       <div class="card-content">
-        <h3>${product.prise}</h3>
-        <p>${product.description}</p>
-        <div class=""star >
-        <img src=${product.images[1]} />
-        </div>
-        <button class="btn">${product.button}</button>
-       </div>
-        </div>
+      <div class="product-card">
+      <img src="${product.images[0]}"
+      </div>
+
+
 
     `;
   });
-  cards.innerHTML = str;
 }
+
 displayProducts(products);
-
-// const loginForm = document.getElementById(`login-form`);
-// const toggleBtn = document.getElementById("toggle");
-
-// toggleForm.addEventListener(`click`, function (e) {
-//   loginForm.classList.toggle(`open`);
-// });
-const btnOpen = document.getElementById("btn-open");
-const btnClose = document.getElementById("btn-close");
-
-const modal = document.querySelector(".modal");
-const modalContent = document.querySelector(".modal-content");
-
-btnOpen.addEventListener("click", function (e) {
-  modal.classList.add("open");
-});
-
-btnClose.addEventListener("click", function (e) {
-  modal.classList.remove("open");
-});
-
-modalContent.addEventListener("click", function (e) {
-  e.stopPropagation();
-});
-
-modal.addEventListener("click", function (e) {
-  modal.classList.remove("open");
-});
