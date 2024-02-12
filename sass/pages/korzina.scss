@@ -602,11 +602,18 @@
   padding-top: 140px;
   .korzina {
     .container {
+      .korzina-title {
+        max-width: 100%;
+        // background-color: red;
+      }
       .korzina-card {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         gap: 28px;
+        img {
+          width: 100%;
+        }
       }
     }
   }
